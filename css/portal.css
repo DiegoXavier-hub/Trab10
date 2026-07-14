@@ -1,0 +1,141 @@
+body {
+    background: #edf1f5;
+    color: #263241;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------- Portal (index do trabalho) ------- */
+.site-hero {
+    background: #183348;
+    background-image: linear-gradient(135deg, #183348 0%, #255a72 66%, #d88945 66%, #d88945 100%);
+    color: #fff;
+    border-bottom: 8px solid #e8bd73;
+}
+
+.hero-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 14px;
+    background: #f3d28d;
+    color: #183348;
+    border-radius: 999px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.site-hero h1 {
+    margin: 0;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+.hero-copy {
+    max-width: 700px;
+    margin: 18px 0 0;
+    color: #eef7f8;
+    font-size: 1.2rem;
+}
+
+.main-content {
+    margin-top: -42px;
+    margin-bottom: 44px;
+}
+
+.intro-panel,
+.exercise-card {
+    background: #fff;
+    border: 1px solid #d6dee5;
+    border-radius: 10px;
+    box-shadow: 0 18px 36px rgba(24, 51, 72, 0.12);
+}
+
+.intro-panel {
+    margin-bottom: 24px;
+    padding: 28px 32px;
+}
+
+.intro-panel h2 {
+    margin: 0 0 8px;
+    color: #183348;
+    font-weight: 700;
+}
+
+.intro-panel p {
+    margin: 0;
+    color: #5d6975;
+}
+
+.exercise-card {
+    padding: 28px;
+    border-top: 7px solid #2d7a6f;
+}
+
+.exercise-card h2 {
+    margin: 20px 0 14px;
+    color: #183348;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.exercise-card p {
+    min-height: 96px;
+    color: #5d6975;
+}
+
+.exercise-number {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #183348;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #183348;
+    border-color: #183348;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #d88945;
+    border-color: #d88945;
+}
+
+footer {
+    padding: 24px 5%;
+    background: #183348;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ------- Paginas internas (funcionarios) ------- */
+.panel-copy {
+    margin-bottom: 20px;
+    color: #60717f;
+}
+
+.form-label {
+    color: #33414e;
+    font-weight: 600;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #88b6e8;
+    box-shadow: 0 0 0 0.22rem rgba(13, 110, 253, 0.18);
+}
+
+@media (max-width: 760px) {
+    .site-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .exercise-card p {
+        min-height: 0;
+    }
+}

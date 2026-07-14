@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Funcionário</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/portal.css">
+</head>
+
+<body>
+
+  <main class="container py-4">
+    <h1>Cadastro de Funcionário</h1>
+    <p class="panel-copy">Dados fictícios do sistema de gestão da clínica médica. O código é gerado automaticamente pelo banco e a senha é armazenada apenas como hash.</p>
+
+    <form action="cadastra-funcionario.php" method="POST" class="row g-3">
+
+      <div class="col-12 col-sm-8">
+        <label for="nome" class="form-label">Nome completo</label>
+        <input type="text" name="nome" class="form-control" id="nome" required>
+      </div>
+      <div class="col-12 col-sm-4">
+        <label for="funcao" class="form-label">Função</label>
+        <select name="funcao" class="form-select" id="funcao" required>
+          <option selected disabled value="">Selecione</option>
+          <option value="recepcao">Recepção</option>
+          <option value="enfermagem">Enfermagem</option>
+          <option value="medico">Médico</option>
+          <option value="financeiro">Financeiro</option>
+        </select>
+      </div>
+
+      <div class="col-12 col-sm-8">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" name="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-12 col-sm-4">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" name="senha" class="form-control" id="senha" required>
+      </div>
+
+      <div class="col-12 col-sm-6">
+        <label for="dataNascimento" class="form-label">Data Nascimento</label>
+        <input type="date" name="dataNascimento" class="form-control" id="dataNascimento" required>
+      </div>
+      <div class="col-12 col-sm-6">
+        <label for="estadoCivil" class="form-label">Estado Civil</label>
+        <select name="estadoCivil" class="form-select" id="estadoCivil" required>
+          <option selected disabled value="">Selecione</option>
+          <option value="solteiro">Solteiro</option>
+          <option value="casado">Casado</option>
+          <option value="viuvo">Viúvo</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <a class="btn btn-outline-secondary" href="mostra-funcionarios.php">Ver funcionários</a>
+        <a class="btn btn-outline-secondary" href="../index.html">Menu de opções</a>
+      </div>
+    </form>
+  </main>
+
+</body>
+
+</html>
